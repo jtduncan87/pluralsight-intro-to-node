@@ -1,0 +1,4 @@
+var request = require("request");
+var s = request("https://www.nhc.noaa.gov/cyclones/");
+
+s.pipe(process.stdout);
